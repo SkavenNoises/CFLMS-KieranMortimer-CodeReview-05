@@ -1,0 +1,121 @@
+var movieList = [
+    {
+        "name": "Casablanca",
+        "blurb": "A cynical American expatriate struggles to decide whether or not he should help his former lover and her fugitive husband escape French Morocco.",
+        "imgsrc": "casablanca.jpg"
+    },
+
+    {
+        "name": "Citizen Kane",
+        "blurb": "Following the death of publishing tycoon Charles Foster Kane, reporters scramble to uncover the meaning of his final utterance; 'Rosebud'.",
+        "imgsrc": "citizenkane.jpg"
+    },
+
+    {
+        "name": "Gone with the Wind",
+        "blurb": "A manipulative woman and a roguish man conduct a turbulent romance during the American Civil War and Reconstruction periods.",
+        "imgsrc": "gonewiththewind.jpg"
+    },
+
+    {
+        "name": "The Wizard of Oz",
+        "blurb": "Dorothy Gale is swept away from a farm in Kansas to a magical land of Oz in a tornado and embarks on a quest with her new friends to see the Wizard who can help her return home to Kansas and help her friends as well.",
+        "imgsrc": "wizardofoz.jpg"
+    },
+
+    {
+        "name": "One Flew Over the Cuckoo's Nest",
+        "blurb": "A criminal pleads insanity and is admitted to a mental institution, where he rebels against the oppressive nurse and rallies up the scared patients.",
+        "imgsrc": "oneflewoverthecookoosnest.jpg"
+    },
+
+    {
+        "name": "Vertigo",
+        "blurb": "A former police detective juggles wrestling with his personal demons and becoming obsessed with a hauntingly beautiful woman.",
+        "imgsrc": "vertigo.jpg"
+    },
+
+    {
+        "name": "Psycho",
+        "blurb": "A Phoenix secretary embezzles forty thousand dollars from her employer's client, goes on the run, and checks into a remote motel run by a young man under the domination of his mother.",
+        "imgsrc": "psycho.jpg"
+    },
+
+    {
+        "name": "Forest Gump",
+        "blurb": "The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate and other historical events unfold through the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.",
+        "imgsrc": "forestgump.jpg"
+    },
+
+    {
+        "name": "The Sound of Music",
+        "blurb": "A woman leaves an Austrian convent to become a governess to the children of a Naval officer widower.",
+        "imgsrc": "soundofmusic.jpg"
+    },
+
+    {
+        "name": "12 Angry Men",
+        "blurb": "A jury holdout attempts to prevent a miscarriage of justice by forcing his colleagues to reconsider the evidence.",
+        "imgsrc": "12angrymen.jpg"
+    },
+
+    {
+        "name": "West Side Story",
+        "blurb": "Two youngsters from rival New York City gangs fall in love, but tensions between their respective friends build toward tragedy.",
+        "imgsrc": "westsidestory.jpg"
+    },
+
+    {
+        "name": "2001: A Space Odyssey",
+        "blurb": "After discovering a mysterious artifact buried beneath the Lunar surface, mankind sets off on a quest to find its origins with help from intelligent supercomputer H.A.L. 9000.",
+        "imgsrc": "2001aspaceoddessy.jpg"
+    },
+
+    {
+        "name": "E.T. the Extra-Terrestrial",
+        "blurb": "A troubled child summons the courage to help a friendly alien escape Earth and return to his home world.",
+        "imgsrc": "ET.jpg"
+    },
+
+    {
+        "name": "The Silence of the Lambs",
+        "blurb": "A young F.B.I. cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer, a madman who skins his victims.",
+        "imgsrc": "silenceofthelambs.jpg"
+    },
+
+    {
+        "name": "Chinatown",
+        "blurb": "A private detective hired to expose an adulterer finds himself caught up in a web of deceit, corruption, and murder.",
+        "imgsrc": "chinatown.jpg"
+    },
+
+    {
+        "name": "Singin' in the Rain",
+        "blurb": "A silent film production company and cast make a difficult transition to sound.",
+        "imgsrc": "singinintherain.jpg"
+    },
+
+    {
+        "name": "It's a Wonderful Life",
+        "blurb": "An angel is sent from Heaven to help a desperately frustrated businessman by showing him what life would have been like if he had never existed.",
+        "imgsrc": "itsawonderfullife.jpg"
+    },
+
+    {
+        "name": "Some Like it Hot",
+        "blurb": "After two male musicians witness a mob hit, they flee the state in an all-female band disguised as women, but further complications set in.",
+        "imgsrc": "somelikeithot.jpg"
+    },
+
+    {
+        "name": "Armadeus",
+        "blurb": " The life, success and troubles of Wolfgang Amadeus Mozart, as told by Antonio Salieri, the contemporaneous composer who was insanely jealous of Mozart's talent and claimed to have murdered him.",
+        "imgsrc": "armadeus.jpg"
+    },
+
+    {
+        "name": "Titanic",
+        "blurb": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
+        "imgsrc": "titanic.jpg"
+    }
+] 

@@ -1,0 +1,85 @@
+$colour_dark: #000000;
+$colour_light: #454545;
+$colour_backdrop: #1d2329;
+$colour_green: #32a23d;
+$colour_text: #ffffff;
+
+body {
+    padding: 0;
+    margin: 0;
+
+    header {
+        background-color: $colour_dark;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-items: center;
+        align-items: center;
+
+        h1 {
+            padding: 0;
+            margin: 0;
+            font-weight: bold;
+            color: $colour_text;
+            margin: 1%;
+        }
+
+        nav {
+            background-color: $colour_light;
+            width: 100%;
+            ul {
+                list-style-type: none;
+                li {
+
+                    a {
+                        color: $colour_text;
+                        text-decoration: none;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        background-color: $colour_backdrop;
+        height: 100vh;
+        width: 100vw;
+
+        display: flex;
+        flex-flow: column nowrap;
+
+        #ui {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-items: center;
+            align-items: center;
+            width: 100%;
+            
+            p {
+                color: $colour_text;
+                font-weight: bold;
+                justify-self: center;
+            }
+
+            select {
+                justify-self: flex-end;
+            }
+        }
+    }
+
+    footer {
+        background-color: $colour_dark;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+
+        h2 {
+            color: $colour_text;
+            font-weight: bold;
+            flex-basis: 100%;
+            text-align: center;
+        }
+    }
+}
