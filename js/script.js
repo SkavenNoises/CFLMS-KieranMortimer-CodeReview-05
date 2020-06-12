@@ -67,49 +67,52 @@ $(document).ready(function () {
     addMovieCards();
     setLikeCount();
 
-    
-    
     // Watching for a change to the sort drop down menu
     $("#sortDropDown").on("change", function() {
         console.log(`${$("#sortDropDown option:selected").val()} has been selected`);
 
+        // Creating an empty array to populate it either 1D or 2D
+        let movieArr = new Array();
+
         // On change determine which behaviour to enact
         switch($("#sortDropDown option:selected").val()){
-            case "none":                
-                
+            case "none":
+                // Populating the array from the order of the element's ID                
+                for (let i = 0; i < movies.length; i++){
+                    movieArr.push($(`#movie${i}`).detach());
+                }
+
+                // Re-inserting the array into the DOM
+                for (movie of movieArr) {
+                    $("#movieWrapper").append(movie);
+                }
+
+                console.log("Sorted Array");
+                console.table(movieArr);
+
                 break;
 
-            case "ascending":
-
-                // Creating an array to store the 2D likes:JqueryObj
-                let movieArr = new Array();
-               
+            case "ascending":               
                 // Iterating through the array and detaching the objects into the array
                 for (let i = 0; i < movies.length; i++){
                     movieArr.push([$(`#movie${i}`).data("likes"), $(`#movie${i}`).detach()]);
                 }
 
-                console.log("Unsorted Array");
+                console.log("Unsorted Array:");
                 console.table(movieArr);
 
                 // Sort array via 0-index of each array element
                 movieArr.sort(function(a, b) {
-                    
                     return a[0] - b[0];
                 })
          
                 console.log("Sorted Array");
                 console.table(movieArr);
 
-                // Inserting the detached object back into HTML
+                // Inserting the detached object back into DOM
                 for (movie of movieArr){
                     $("#movieWrapper").append(movie[1]);
                 }
-
-
-               
-
-
 
                 break;
 
