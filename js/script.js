@@ -54,9 +54,25 @@ $(document).ready(function () {
 
             // Displaying the updated value
             $(this).find(".likeCounter").text(`${$(this).data("likes")}`);
-
-
-
         });
     }
+
+    console.log("Click listeners attached");
+
+        // switch to choose behaviour
+        // jquery to get specific option at val= x
+        // do thing
+
+    // Change watcher on drop down
+    $("#sortDropDown").on("change", function() {
+        console.log(`${$("#sortDropDown option:selected").val()} has been selected`);
+
+   
+
+    });
+
+
+
+
+
 });
