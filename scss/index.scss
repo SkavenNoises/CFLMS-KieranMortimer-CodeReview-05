@@ -71,7 +71,19 @@ body {
                 top: 35%;
                 right: 0%;
                 text-align: left;
+
+                border: 0;
+                border-radius: 5%;
+                padding: 0.25%;
+                appearance: none;
+                background: url("img/arrow.png");
+
+                font-size: 2vh;
+                text-align: right;
+                color: $colour_text;
             }
+
+            
         }
 
         #movieWrapper {
@@ -122,6 +134,7 @@ body {
                     }
 
                     .likes {
+                        width: 100%;
                         align-self: flex-end;
                         justify-self: bottom;
                         display: flex;
@@ -136,15 +149,18 @@ body {
                             font-weight: bold;
                             font-size: 2vh;
                             margin-right: 2%;
+
+                            color: transparent;  
+                            text-shadow: 0 0 0 $colour_green;
                         }
 
                         .grnCircle {
                             background-color: $colour_green;
                             border-radius: 100%;
-                            height: 4vh;
-                            width: 4vh;
-                            
-                            
+                            height: 5vh;
+                            width: 5vh;
+                            min-width: fit-content;
+                            min-height: fit-content;
                             display: flex;
                             flex-flow: row;
                             justify-items: center;
@@ -180,6 +196,30 @@ body {
     }
 }
 
+// Crushing down the like button
+@media only screen and (max-width: 800px) {
+    body {
+        main {
+            #movieWrapper {
+                .movieCard {
+                    .cardInfo {
+                        .likes {
+                            .grnCircle {
+                                height: 3vh;
+                                width: 3vh;
+
+                                .likeCounter {
+                                    font-size: 1vh;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 // Small screen breakpoint
 @media only screen and (max-width: 600px) {
     body {
@@ -205,6 +245,7 @@ body {
                 #sortDropDown {
                     position: static;
                     margin-top: 2%;
+                    text-align: center;
                     
                 }
             }

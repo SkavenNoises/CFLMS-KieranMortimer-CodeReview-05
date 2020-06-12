@@ -15,7 +15,7 @@ function addMovieCards(){
                     <p>${movies[i].blurb}</p>
 
                     <div class="likes">
-                        <p class="likeBtn">Like</p>
+                        <p class="likeBtn">Like 👍</p>
 
                         <div class="grnCircle">
                             <p class="likeCounter"></p>
@@ -117,9 +117,28 @@ $(document).ready(function () {
                 break;
 
             case "descending":
+                // Iterating through the array and detaching the objects into the array
+                for (let i = 0; i < movies.length; i++){
+                    movieArr.push([$(`#movie${i}`).data("likes"), $(`#movie${i}`).detach()]);
+                }
+
+                console.log("Unsorted Array:");
+                console.table(movieArr);
+
+                // Sort array via 0-index of each array element
+                movieArr.sort(function(a, b) {
+                    return b[0] - a[0];
+                })
+         
+                console.log("Sorted Array");
+                console.table(movieArr);
+
+                // Inserting the detached object back into DOM
+                for (movie of movieArr){
+                    $("#movieWrapper").append(movie[1]);
+                }
 
                 break;
         }
-
     });
 });
