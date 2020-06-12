@@ -30,12 +30,15 @@ body {
             width: 100%;
             ul {
                 list-style-type: none;
+                margin-left: 10%;
+
                 li {
 
                     a {
                         color: $colour_text;
                         text-decoration: none;
                         font-weight: bold;
+                        font-size: 3vh;
                     }
                 }
             }
@@ -45,27 +48,29 @@ body {
     main {
         background-color: $colour_backdrop;
         height: 100%;
-        width: 100vw;
-
+        width: 100%;
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
 
         #ui {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-items: center;
-            align-items: center;
-            width: 100%;
+            width: 76vw;
+            position: relative;
             
             p {
+                width: 100%;
                 color: $colour_text;
                 font-weight: bold;
-                justify-self: center;
+                font-size: 3vh;
+                text-align: center;
             }
 
-            select {
-                justify-self: flex-end;
+            #sortDropDown {
+                position: absolute;
+                float: right;
+                top: 35%;
+                right: 0%;
+                text-align: left;
             }
         }
 
@@ -126,10 +131,11 @@ body {
 
                         margin: 2%;
 
-                        p {
+                        .likeBtn {
                             color: $colour_green;
                             font-weight: bold;
-
+                            font-size: 2vh;
+                            margin-right: 2%;
                         }
 
                         .grnCircle {
@@ -173,3 +179,64 @@ body {
         }
     }
 }
+
+// Small screen breakpoint
+@media only screen and (max-width: 600px) {
+    body {
+        header {
+            nav {
+                ul {
+                    margin-left: 0;
+                }
+            }
+        }
+
+        main {
+            #ui {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+
+                p {
+                    display: none;
+                }
+
+                #sortDropDown {
+                    position: static;
+                    margin-top: 2%;
+                    
+                }
+            }
+            #movieWrapper {
+                width: 100vw; 
+
+                .movieCard {
+                    flex-basis: 95%;
+
+                    .cardInfo {           
+                        h3 {
+                            font-size: 4vw;
+                        }
+    
+                        p {
+                            font-size: 3vw;                            
+                        }
+    
+                        .likes {     
+                            .likeBtn {
+                                font-size: 2vh;
+                            }
+
+                            .grnCircle {    
+                                p {
+                                    font-size: 3vh;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 

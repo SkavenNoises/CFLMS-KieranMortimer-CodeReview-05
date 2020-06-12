@@ -34,18 +34,20 @@ body header nav {
 
 body header nav ul {
   list-style-type: none;
+  margin-left: 10%;
 }
 
 body header nav ul li a {
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
+  font-size: 3vh;
 }
 
 body main {
   background-color: #1d2329;
   height: 100%;
-  width: 100vw;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,29 +61,24 @@ body main {
 }
 
 body main #ui {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
+  width: 76vw;
+  position: relative;
 }
 
 body main #ui p {
+  width: 100%;
   color: #ffffff;
   font-weight: bold;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  font-size: 3vh;
+  text-align: center;
 }
 
-body main #ui select {
-  justify-self: flex-end;
+body main #ui #sortDropDown {
+  position: absolute;
+  float: right;
+  top: 35%;
+  right: 0%;
+  text-align: left;
 }
 
 body main #movieWrapper {
@@ -174,9 +171,11 @@ body main #movieWrapper .movieCard .cardInfo .likes {
   margin: 2%;
 }
 
-body main #movieWrapper .movieCard .cardInfo .likes p {
+body main #movieWrapper .movieCard .cardInfo .likes .likeBtn {
   color: #32a23d;
   font-weight: bold;
+  font-size: 2vh;
+  margin-right: 2%;
 }
 
 body main #movieWrapper .movieCard .cardInfo .likes .grnCircle {
@@ -227,4 +226,51 @@ body footer h2 {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  body header nav ul {
+    margin-left: 0;
+  }
+  body main #ui {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main #ui p {
+    display: none;
+  }
+  body main #ui #sortDropDown {
+    position: static;
+    margin-top: 2%;
+  }
+  body main #movieWrapper {
+    width: 100vw;
+  }
+  body main #movieWrapper .movieCard {
+    -ms-flex-preferred-size: 95%;
+        flex-basis: 95%;
+  }
+  body main #movieWrapper .movieCard .cardInfo h3 {
+    font-size: 4vw;
+  }
+  body main #movieWrapper .movieCard .cardInfo p {
+    font-size: 3vw;
+  }
+  body main #movieWrapper .movieCard .cardInfo .likes .likeBtn {
+    font-size: 2vh;
+  }
+  body main #movieWrapper .movieCard .cardInfo .likes .grnCircle p {
+    font-size: 3vh;
+  }
 }
