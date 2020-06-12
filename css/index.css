@@ -43,7 +43,7 @@ body header nav ul li a {
 
 body main {
   background-color: #1d2329;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,6 +52,9 @@ body main {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body main #ui {
@@ -78,6 +81,119 @@ body main #ui p {
 
 body main #ui select {
   justify-self: flex-end;
+}
+
+body main #movieWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 80vw;
+}
+
+body main #movieWrapper .movieCard {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  background-color: #181818;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  justify-items: space-between;
+  margin: 2% 0;
+  height: 100%;
+}
+
+body main #movieWrapper .movieCard img {
+  margin: 2%;
+  border-radius: 2%;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+body main #movieWrapper .movieCard .cardInfo {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+body main #movieWrapper .movieCard .cardInfo h3 {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2vw;
+}
+
+body main #movieWrapper .movieCard .cardInfo p {
+  color: #ffffff;
+  font-size: 1vw;
+}
+
+body main #movieWrapper .movieCard .cardInfo .likes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+}
+
+body main #movieWrapper .movieCard .cardInfo .likes p {
+  color: #32a23d;
+  font-weight: bold;
+  font-size: 1vw;
+}
+
+body main #movieWrapper .movieCard .cardInfo .likes img {
+  height: inherit;
+  width: 20%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+body main #movieWrapper .movieCard .cardInfo .likes .grnCircle {
+  border-radius: 100%;
+  background-color: #32a23d;
+  height: 10%;
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main #movieWrapper .movieCard .cardInfo .likes .grnCircle p {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1vw;
 }
 
 body footer {

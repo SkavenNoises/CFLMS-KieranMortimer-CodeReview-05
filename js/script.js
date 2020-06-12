@@ -6,7 +6,7 @@ $(document).ready(function () {
     // Constructing HTML elements from array
     for (let i = 0; i < movies.length; i++){
         $("#movieWrapper").append(`
-            <div id="movie${i}" class "movieCard">
+            <div id="movie${i}" class="movieCard">
                 <img src="img/${movies[i].imgsrc}"></img>
 
                 <div class="cardInfo">
@@ -23,8 +23,6 @@ $(document).ready(function () {
                     </div>
                 </div>
             </div>
-        
-
         `);
     }
 
