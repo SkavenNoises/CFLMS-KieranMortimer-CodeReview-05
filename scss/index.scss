@@ -94,18 +94,24 @@ body {
                 }
 
                 .cardInfo {
-                    flex-basis: 70%;                    
+                    flex-basis: 70%;    
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-items: center;
+                    align-items: flex-start;                
 
                     h3 {
                         color: $colour_text;
                         font-weight: bold;
-                        font-size: 2vw;
-                        
+                        font-size: 1.7vw;
+                        margin: 3% 2% 2% 2%;
                     }
 
                     p {
                         color: $colour_text;
                         font-size: 1vw;
+                        max-height: 200px;
+                        margin: 3% 2% 2% 2%;
                         
                     }
 

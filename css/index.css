@@ -124,17 +124,31 @@ body main #movieWrapper .movieCard img {
 body main #movieWrapper .movieCard .cardInfo {
   -ms-flex-preferred-size: 70%;
       flex-basis: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  justify-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 body main #movieWrapper .movieCard .cardInfo h3 {
   color: #ffffff;
   font-weight: bold;
-  font-size: 2vw;
+  font-size: 1.7vw;
+  margin: 3% 2% 2% 2%;
 }
 
 body main #movieWrapper .movieCard .cardInfo p {
   color: #ffffff;
   font-size: 1vw;
+  max-height: 200px;
+  margin: 3% 2% 2% 2%;
 }
 
 body main #movieWrapper .movieCard .cardInfo .likes {
