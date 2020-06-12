@@ -183,7 +183,6 @@ body main #movieWrapper .movieCard .cardInfo .likes {
 }
 
 body main #movieWrapper .movieCard .cardInfo .likes .likeBtn {
-  color: #32a23d;
   font-weight: bold;
   font-size: 2vh;
   margin-right: 2%;
